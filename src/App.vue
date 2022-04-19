@@ -86,7 +86,10 @@ export default {
         },
     },
     async created() {
+    try {
         this.tasks = await this.fetchTasks()
+        }catch (error) {
+        }
     }
 }
 </script>
