@@ -89,6 +89,7 @@ export default {
     try {
         this.tasks = await this.fetchTasks()
         }catch (error) {
+        console.log(error)
         }
     }
 }
